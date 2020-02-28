@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<body>
+	<div class="container">
+	<form name="contact-form" action="http://localhost:4000/pdf" method="POST">
+		<div class="form-group">
+    		<label for="exampleInputEmail1">PDF URL</label>
+    		<input name="pdf" class="form-control" id="pdfValue" aria-describedby="emailHelp" placeholder="Enter url"/>
+  		</div>
+  		<button  id="confirm" type="submit" class="btn btn-primary mb-2">Confirm</button>
+  		<div id="demo"></div>
+	</form>
+	</div>
+
+
+
+<!-- //QUESTIONS - ANOTHER METHOD TO SEND VALUE FROM INPUT TO BACKEND -->
+<!-- OR HOW TO RESET FORM AFTER SUBMIT -->
+<!-- HOW TO TAKE LAST 10-15 LETTER FROM THE END OF INPUT VALUE AND PASTE TO THE BACKEND TO OPTION NAME? -->
+<!-- create button to clear array of pdfs -->
+
+<script>
+	function resetForm() {
+		document.getElementById("pdfValue").value = '';
+	}
+
+	// var listOfPdf = [];
+	// document.getElementById('confirm').addEventListener("click", function(){
+	// 	var pdfValue = document.getElementById("pdfValue").value;
+ //  		document.getElementById("demo").innerHTML =  pdfValue; //test, remove later
+ //  		listOfPdf.push(pdfValue);
+ //  		console.log(listOfPdf);
+ //  		document.getElementById("pdfValue").value = '';
+	// });
+	// console.log(listOfPdf.length);
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<!-- how to connect any js file -->
+<!-- <script src="/main.js"></script> --> 
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</body>
+</html>
